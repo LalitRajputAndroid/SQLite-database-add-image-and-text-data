@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="155dp"
+    android:layout_height="165dp"
+    app:cardCornerRadius="5dp"
+    android:layout_margin="10dp"
+    app:cardElevation="5dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:gravity="center_horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/p_img_textviewID"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/product" />
+
+        <TextView
+            android:id="@+id/p_name_textviewID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/p_img_textviewID"
+            android:text="Name"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/p_price_textviewID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/p_name_textviewID"
+            android:text="Price" />
+
+        <TextView
+            android:id="@+id/p_dicount_textviewID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/p_name_textviewID"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/p_price_textviewID"
+            android:text="Discount" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dis price"
+            android:textColor="@color/black"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/dis_price_textV_id"
+            android:layout_below="@+id/p_name_textviewID"
+            android:layout_toRightOf="@+id/p_dicount_textviewID"
+            />
+
+
+        <TextView
+            android:id="@+id/p_discription_textviewID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/p_price_textviewID"
+            android:text="Discription" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
